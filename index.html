@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/portfolio/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Daevik Jain</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <ul>
+                <li>Hi, I am <b>Daevik Jain</b>, a biomedical engineering student with a passion for software development.</li>
+                <li>My degree provides me with the opportunity to apply <b>human factors and design engineering</b> to computer science.</li>
+                <li>I specialize in <b>Java, C++, Python, JS, HTML, CSS, MATLAB</b> and <b>SQL</b></li>
+                <li>I have created a variety of projects such as Java games, and React Apps.</li>
+                <li>My goal is too refine my software skills across the field and apply them in the health tech industry.</li>
+                <li>I hope to learn more about machine learning, cloud computing and app/game development. </li> 
+                <li>Outside of coding, I enjoy reading, going to the gym and playing board games. </li>
+
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Key Projects</h2>
+            <div class="project-card">
+                <div class="project-thumbnail">
+                    <img src="images/my-diet-mapp-thumbnail.png" alt="My Diet Mapp Thumbnail">
+                </div>
+                <div class="project-details">
+                    <h3>My Diet Mapp | React Native App | JS, CSS, HTML</h3>
+                    <p>Worked with a team to develop an app that displays nearby restaurants that meet your dietary restrictions.
+                    <br><br>My responsibilities:</p>
+                    <ul>
+                        <li>Created a React Native framework to find restaurants that satisfy a variety of users’ dietary restrictions.</li>
+                        <li>Integrated the Navigator API to get user’s location and showcase nearby restaurants on a leaflet.js interactive map.</li>
+                        <li>Designed an aesthetic and responsive UI using HTML5, CSS3 and JavaScript.</li>
+                    </ul>
+                    <button class="media-btn" onclick="openModal(['images/my-diet-mapp-1.jpg', 'images/my-diet-mapp-2.jpg', 'images/my-diet-mapp-3.jpg'])">
+                        View Media
+                    </button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-thumbnail">
+                    <img src="images/emg-fabric-thumbnail.jpg" alt="EMG Fabric Thumbnail">
+                </div>
+                <div class="project-details">
+                    <h3> EMG TensorFlow Model | Biomechatronic Design Team | Python</h3>
+                    <p>Worked with EMG Fabric Software Team to develop a model to interpret EMG signals as different gestures.
+                    <br><br>My responsibilities:</p>
+                    <ul>
+                        <li>Implemented a Machine Learning Model with Python TensorFlow.</li>
+                        <li>Trained model to distinguish between 8 unique gestures on a synthetic data set.</li>
+                        <li>Developed a graphing tool using Python, Matplotlib with Tkinter GUI to visualize EMG Sensor Data. </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-thumbnail">
+                    <img src="images/legend-of-caelum-thumbnail.png" alt="Legend of Caelum Thumbail">
+                </div>
+                <div class="project-details">
+                    <h3>Legend of Caelum | Rogue-Like Tower Adventure Game | Java</h3>
+                    <p>Collaborated with a partner to create a 26 level adventure game consisting of a tutorial and 5 different tower stages.
+                    <br><br>My responsibilities:</p>
+                    <ul>
+                        <li>Used Swing framework to develop the graphics display and panel.</li>
+                        <li>Game consists of custom character, items and enemy models with unique movement algorithms and combat system with varying bosses and room mechanics.</li>
+                        <li>Created a Game Design Document, Risk Analysis Chart, Project Charter and Needs Analysis Diagram.</li>
+                    </ul>
+                    <button class="media-btn" onclick="openModal([
+                    'images/legend-of-caelum-1.png',
+                    'images/legend-of-caelum-2.png',
+                    'images/legend-of-caelum-3.png',
+                    'images/legend-of-caelum-4.png',
+                    'images/legend-of-caelum-5.png',
+                    'images/legend-of-caelum-6.png',
+                    'images/legend-of-caelum-7.png',
+                    'images/legend-of-caelum-8.png',
+                    'images/legend-of-caelum-9.png',
+                    'images/legend-of-caelum-10.png',
+                    'images/legend-of-caelum-11.png'
+                ])">
+                        View Media
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <a href="mailto:d59jain@uwaterloo.ca" class="contact-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+16476157812" class="contact-icon" title="Phone">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/daevik-jain" target="_blank" class="contact-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/DJFiya" target="_blank" class="contact-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        
+    </div>
+    <div id="mediaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="slider">
+                <button class="prev-btn">&#10094;</button>
+                <img id="sliderImage" src="" alt="Media">
+                <button class="next-btn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
