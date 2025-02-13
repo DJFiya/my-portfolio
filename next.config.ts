@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true, // GitHub Pages does not support Next.js image optimization
+  },
+  basePath: "/my-portfolio", // Ensure this matches your GitHub repo name
+  assetPrefix: "/my-portfolio/",
 };
 
-module.exports = {
-  output: 'export',
-  basePath: '/my-portfolio', // Make sure this matches your repo name
-};
-
-export default nextConfig;
+module.exports = nextConfig;
