@@ -9,7 +9,7 @@ const HeroSection = () => {
     <div className="relative w-full h-screen bg-black text-white flex flex-col items-center justify-center">
       {/* Background Image */}
       <Image 
-        src="/moonlit-trees.jpg" 
+        src="https://djfiya.github.io/my-portfolio/moonlit-trees.jpg" 
         alt="Moonlit Trees" 
         layout="fill" 
         objectFit="cover" 
