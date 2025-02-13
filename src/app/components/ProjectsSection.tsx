@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { FaRobot, FaHandHoldingMedical, FaMapMarkerAlt , FaAtom, FaFortAwesome, FaCog } from "react-icons/fa";
-import Image from 'next/image';
 
 const ProjectsSection = () => {
     return (

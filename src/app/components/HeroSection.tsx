@@ -32,7 +32,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 3, ease: "easeOut"}}
       >
-        Daevik Jain's Portfolio
+        Daevik Jain&rsquo;s Portfolio
       </motion.h1>
 
       {/* Social Icons */}
