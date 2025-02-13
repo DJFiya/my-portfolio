@@ -1,12 +1,12 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/my-portfolio",
-  assetPrefix: "/my-portfolio/next_static/",
+  distDir: "docs", // GitHub Pages requires content in the docs folder
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static exports
   },
-  trailingSlash: true,
-  distDir: "docs",
+  basePath: "/my-portfolio", // This must match your repository name
+  assetPrefix: "/my-portfolio/",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
