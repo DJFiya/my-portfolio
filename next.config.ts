@@ -6,6 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  trailingSlash: true,  // <- Add this line
   distDir: "docs", // Output files to 'docs/' instead of '.next'
 };
 
